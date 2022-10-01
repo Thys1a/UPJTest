@@ -1,0 +1,4 @@
+repository "MiniGame@avalanchy@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
