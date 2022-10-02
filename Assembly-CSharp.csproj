@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
+    <Compile Include="Assets\Scripts\SceneMgr.cs" />
+    <Compile Include="Assets\Scripts\SysDefine.cs" />
+    <Compile Include="Assets\Scripts\BaseScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

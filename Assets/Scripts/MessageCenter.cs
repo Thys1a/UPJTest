@@ -33,7 +33,7 @@ public class MessageCenter
     /// </summary>
     public enum MessageType
     {
-        
+        SceneSwitching
     }
 
     /// <summary>
