@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\MessageCenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
