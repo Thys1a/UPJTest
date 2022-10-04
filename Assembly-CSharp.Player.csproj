@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
+    <Compile Include="Assets\Scripts\Audio\Audio Manager.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
