@@ -11,4 +11,6 @@ public static class SysDefine
     {
         public const string LOADSCENE = "Load";
     }
+
+    public const string SYS_PATH_CANVAS = "UIPrefab/RootCanvas";
 }
