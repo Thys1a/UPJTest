@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{60324920-9695-DD7C-8544-AEBCF78E2B2C}</ProjectGuid>
+=======
+    <ProjectGuid>{9F94E66D-0073-06B6-1765-F37AFFF31CA8}</ProjectGuid>
+>>>>>>> f31855df3d62fe9514bd38d296d87dc3f761d9a4
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +67,9 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\BaseUIForm.cs" />
+    <Compile Include="Assets\Scripts\XMLUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
