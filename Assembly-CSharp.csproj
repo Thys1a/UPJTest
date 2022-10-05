@@ -59,12 +59,10 @@
     <Compile Include="Assets\Scripts\SceneMgr.cs" />
     <Compile Include="Assets\Scripts\Audio\Audio Manager.cs" />
     <Compile Include="Assets\Scripts\SysDefine.cs" />
-    <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
-    <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClueEntity.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
