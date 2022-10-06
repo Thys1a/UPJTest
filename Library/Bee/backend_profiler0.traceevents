@@ -1,5 +1,6 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1665039613393448, "dur":2005, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1665039613395466, "dur":4585, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1665039613400234, "dur":81, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -68,6 +69,8 @@
 ,{ "pid":12345, "tid":8, "ts":1665039613407993, "dur":298, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1665039613412578, "dur":569, "ph":"X", "name": "ProfilerWriteOutput" }
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 ,{ "pid":12345, "tid":0, "ts":1664971058031176, "dur":1255, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1664971058032436, "dur":534, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1664971058033068, "dur":49, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -126,5 +129,8 @@
 ,{ "pid":12345, "tid":12, "ts":1664971058034354, "dur":3191, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":12, "ts":1664971058037545, "dur":422, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1664971058041363, "dur":380, "ph":"X", "name": "ProfilerWriteOutput" }
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 ,

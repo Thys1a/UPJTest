@@ -344,7 +344,10 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -431,6 +434,9 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -505,7 +511,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 4
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_RootOrder: 4
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -530,10 +540,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -544,6 +557,9 @@ GameObject:
   m_TagString: Clue
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -596,7 +612,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingOrder: 0
+=======
+  m_SortingOrder: 1
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_SortingOrder: 1
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -627,6 +647,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -87.9, y: 9.054791, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -635,6 +656,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -648,6 +671,9 @@ Transform:
   m_RootOrder: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -667,7 +693,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_IsTrigger: 0
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -695,7 +725,10 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -757,6 +790,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -878,10 +914,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -892,6 +931,9 @@ GameObject:
   m_TagString: Clue
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -944,7 +986,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingOrder: 0
+=======
+  m_SortingOrder: 1
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_SortingOrder: 1
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -975,6 +1021,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -86.3, y: -8.7, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -983,6 +1030,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -996,6 +1045,9 @@ Transform:
   m_RootOrder: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1015,7 +1067,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_IsTrigger: 0
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1043,7 +1099,10 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1069,6 +1128,9 @@ MonoBehaviour:
   clueType: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1088,10 +1150,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1102,6 +1167,9 @@ GameObject:
   m_TagString: Clue
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1154,7 +1222,11 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingOrder: 0
+=======
+  m_SortingOrder: 1
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_SortingOrder: 1
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1185,6 +1257,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -62.9, y: 9.054791, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -1193,6 +1266,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1206,6 +1281,9 @@ Transform:
   m_RootOrder: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1225,7 +1303,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_IsTrigger: 0
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1253,7 +1335,10 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1413,6 +1498,9 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1432,10 +1520,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1446,6 +1537,9 @@ GameObject:
   m_TagString: Clue
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1498,9 +1592,15 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -1535,6 +1635,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -61.9, y: -7.9, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -1543,6 +1644,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1556,6 +1659,9 @@ Transform:
   m_RootOrder: 3
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1575,7 +1681,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   m_IsTrigger: 0
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1603,7 +1713,10 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1629,6 +1742,9 @@ MonoBehaviour:
   clueType: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
@@ -1647,7 +1763,10 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1148976283}
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -1661,6 +1780,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1684,6 +1804,8 @@ MonoBehaviour:
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 --- !u!114 &1148976284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1699,6 +1821,12 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  clueList: []
+  clueSelectedPanel: {fileID: 1663414917}
+  clueSelectedPanelText: {fileID: 1793668386}
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
   clueList: []
   clueSelectedPanel: {fileID: 1663414917}
@@ -1730,9 +1858,12 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -2212,6 +2343,9 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
