@@ -63,10 +63,14 @@
 <<<<<<< HEAD
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
 =======
 <<<<<<< HEAD
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
     <Compile Include="Assets\Scripts\Test.cs" />
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -78,9 +82,12 @@
     <Compile Include="Assets\Scripts\BaseScene.cs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClueEntity.cs" />
 =======
+=======
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
@@ -95,6 +102,9 @@
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
 >>>>>>> f35ed85a84270846690f7ec395827a9d0345e7b0
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2543be3201d385409017e032012eeea37c1420f0
+=======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
 =======
 >>>>>>> 2543be3201d385409017e032012eeea37c1420f0
