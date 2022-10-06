@@ -24,32 +24,35 @@ public static class XMLUtil
 	/// <returns>XmlNode</returns>
 	public static XmlNode LoadXml(string path, string name = "root")
 	{
-
+		string s = ((Resources.Load(path) as TextAsset)).text;
 		//读取路径下的文件
 		XmlDocument document = new XmlDocument();
-		document.LoadXml(path);
+		document.LoadXml(s);
 		if (document == null) return null;
 		//得到指定节点内的内容
-		XmlNode node = document.SelectSingleNode(name);//.ChildNodes;
+		XmlNode node = document.SelectSingleNode(name);
 		return node;
 	}
 
 	/// <summary>
-	/// 获取该节点下子结点的名字和值
+	/// 获取该节点的名字和值
 	/// </summary>
 	/// <param name="node"></param>
-	/// <returns>包含一维字符串数组的list,string[0]=name string[1]=value string[2]=父节点</returns>
-	public static List<string[]> GetNameValueFromChildListOfNode(XmlNode node)
+	/// <returns>item[0]=name item[1]=value</returns>
+	public static string[] GetNameValueOfNode(XmlNode node)
 	{
-		List<string[]> list = new List<string[]>();
+		string[] item = new string[2];
+		item.SetValue(node.Name, 0);
+		item.SetValue(node.InnerText, 1);
+		return item;
+	}
+	public static List<XmlNode> GetChildNodes(XmlNode node)
+    {
 		XmlNodeList xmlNodeList = node.ChildNodes;
-		foreach (XmlElement e in xmlNodeList)
+		List< XmlNode> list = new List<XmlNode>();
+		foreach (XmlNode e in xmlNodeList)
 		{
-			string[] stringItem = new string[3];
-			stringItem.SetValue(e.Name, 0);
-			stringItem.SetValue(e.InnerText, 1);
-			stringItem.SetValue(node.Name, 2);
-			list.Add(stringItem);
+			list.Add(e);
 		}
 		return list;
 	}

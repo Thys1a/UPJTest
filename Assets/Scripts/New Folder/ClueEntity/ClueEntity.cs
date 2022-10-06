@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class ClueEntity : MonoBehaviour
 {    
-    public int clueName;  //线索名
+    public string clueName;  //线索名
+    public int clueNum;
     public Texture clueIcon;  //线索图片
-    public Text clueText;  //线索包含的文本
+    public string clueText;  //线索包含的文本
     public AudioSource clueAudioSource;  //线索包含的音频
     public bool validBit;  //线索的有效位
     public int precursor;  //线索的前驱
