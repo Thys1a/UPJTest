@@ -1,0 +1,52 @@
+[
+  {
+    "MountId": "56e62dd7-241f-41e9-8c6b-dd4ca4513e62",
+    "AncestorCsetIds": [
+      3
+    ],
+    "SourceCsetId": 4,
+    "DestinationCsetId": 3,
+    "FileConflicts": [
+      {
+        "Path": "/ProjectSettings/TagManager.asset",
+        "ItemId": 153,
+        "ParentItemId": 131,
+        "BaseRevId": 122,
+        "SourceRevId": 224,
+        "DestinationRevId": 122
+      },
+      {
+        "Path": "/.vsconfig",
+        "ItemId": 164,
+        "ParentItemId": 2,
+        "BaseRevId": 159,
+        "SourceRevId": 176,
+        "DestinationRevId": 159
+      },
+      {
+        "Path": "/Assets/Scenes/SampleScene.unity",
+        "ItemId": 170,
+        "ParentItemId": 167,
+        "BaseRevId": 172,
+        "SourceRevId": 186,
+        "DestinationRevId": 172
+      },
+      {
+        "Path": "/Assets/Scenes/SampleScene.unity.meta",
+        "ItemId": 171,
+        "ParentItemId": 167,
+        "BaseRevId": 161,
+        "SourceRevId": 187,
+        "DestinationRevId": 161
+      },
+      {
+        "Path": "/Assets/Scenes.meta",
+        "ItemId": 169,
+        "ParentItemId": 165,
+        "BaseRevId": 162,
+        "SourceRevId": 185,
+        "DestinationRevId": 162
+      }
+    ]
+  }
+]

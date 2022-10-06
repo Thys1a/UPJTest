@@ -60,24 +60,14 @@
     <Compile Include="Assets\Scripts\Audio\Audio Manager.cs" />
     <Compile Include="Assets\Scripts\BaseUIForm.cs" />
     <Compile Include="Assets\Scripts\SysDefine.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\MessageCenter.cs" />
-    <Compile Include="Assets\Scripts\BaseScene.cs" />
-=======
-    <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClueEntity.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\BaseUIForm.cs" />
-    <Compile Include="Assets\Scripts\XMLUtil.cs" />
->>>>>>> f35ed85a84270846690f7ec395827a9d0345e7b0
+    <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
