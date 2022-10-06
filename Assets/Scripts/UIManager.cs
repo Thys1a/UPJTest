@@ -45,8 +45,9 @@ public class UIManager : MonoBehaviour
 
         if (_DicFormsPaths != null)//‘ÿ»Î‘§…Ë
         {
-            //_DicFormsPaths.Add("Panel", @"UIPrefab\Panel");
-            
+            _DicFormsPaths.Add("ClueSelectedPanel", @"UIPrefab\clueSelectedPanel");
+            _DicFormsPaths.Add("StaffPanel", @"UIPrefab\StaffPanel");
+
         }
     }
 
