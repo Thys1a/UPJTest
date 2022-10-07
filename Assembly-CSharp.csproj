@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
+    <Compile Include="Assets\Scripts\CluePool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
