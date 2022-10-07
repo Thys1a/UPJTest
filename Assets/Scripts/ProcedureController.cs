@@ -18,9 +18,10 @@ public class ProcedureController: Singleton<ProcedureController>
 
         this.gameObject.AddComponent<ProcedureEntity>();
         this.gameObject.AddComponent<ClickManager>();
+        this.gameObject.AddComponent<CluePool>();
         procedure = this.GetComponent<ProcedureEntity>();procedure.enabled = false;
         logicController = this.GetComponent<ClickManager>();logicController.enabled = false;
-        Debug.Log("流程控制器开始工作……");
+        
 
         //todo：reflect entity
         list = new List<string>();
@@ -29,11 +30,16 @@ public class ProcedureController: Singleton<ProcedureController>
         list.Add("Level2");
         point = 0;
 
+        Debug.Log("流程控制器开始工作……");
         procedure.enabled = true;
+
         PreCheck();
         
     }
-
+    /// <summary>
+    /// 设置线索数量并打开逻辑控制
+    /// </summary>
+    /// <param name="number"></param>
     private void SetClueNumber(object number)
     {
         OpenOrCloseLogicControl(true);
@@ -83,9 +89,9 @@ public class ProcedureController: Singleton<ProcedureController>
             Debug.Log("所有流程结束。"); 
             return;
         }
-        if (SceneMgr.Instance.GetScene().name != list[point]) SceneMgr.Instance.LoadScene(list[point]);
+        if (SceneMgr.Instance.WaitingNumber()>0) SceneMgr.Instance.LoadScene();
         else StartControl(null);
-        if (point < list.Count-1) SceneMgr.Instance.PreLoadScene(list[point + 1]);
+        
 
 
 
@@ -102,10 +108,15 @@ public class ProcedureController: Singleton<ProcedureController>
             Debug.LogError("流程进入失败，请检查。");
         }
     }
+    /// <summary>
+    /// 流程结束，回收资源
+    /// </summary>
+    /// <param name="obj"></param>
     private void EndControl(object obj)
     {
         OpenOrCloseLogicControl(false);
         Debug.Log("第"+point+"个流程结束。");
+        MessageCenter.Instance.Send(MessageCenter.MessageType.ClueRecycle, null);
         list[point] = null;
         point += 1;
         PreCheck();

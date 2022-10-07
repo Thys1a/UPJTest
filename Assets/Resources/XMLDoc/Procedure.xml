@@ -1,9 +1,8 @@
 <root>
 	<Start>
-		<next>Level1</next>
+		<next>Level</next>
 	</Start>
 	<Level1>
-		<next>Level2</next>
 		<background>Level1bg</background>
 		<clues>
 			<clue>
@@ -58,6 +57,14 @@
 				<num>3</num>
 				<pre>2</pre>
 				<valid>True</valid>
+			</clue>
+			<clue>
+				<x>-1</x>
+				<y>2</y>
+				<name>线索4</name>
+				<num>4</num>
+				<pre>-1</pre>
+				<valid>Flase</valid>
 			</clue>
 		</clues>
 	</Level2>

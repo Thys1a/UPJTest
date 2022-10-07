@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +21,7 @@ public class SceneMgr
         }
     }
     private Dictionary<string, AsyncOperation> PreLoadingScenesDict;
+
     private SceneMgr()
     {
         PreLoadingScenesDict = new Dictionary<string, AsyncOperation>();
@@ -56,8 +59,20 @@ public class SceneMgr
     /// 加载场景，并发送切换消息
     /// </summary>
     /// <param name="name">场景名称</param>
-    public void LoadScene(string name)
+    public void LoadScene(string name=null)
     {
+        if (name == null)
+        {
+            if (PreLoadingScenesDict.Count > 0)
+            {
+                name = PreLoadingScenesDict.First().Key;
+            }
+            else
+            {
+                Debug.LogError("scene name was not provided");
+                return;
+            }
+        }
         if (PreLoadingScenesDict.ContainsKey(name))
         {
             PreLoadingScenesDict[name].allowSceneActivation = true;
@@ -93,6 +108,10 @@ public class SceneMgr
     {
         
         return SceneManager.GetActiveScene();
+    }
+    public int WaitingNumber()
+    {
+        return PreLoadingScenesDict.Count;
     }
 
     /// <summary>

@@ -57,10 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SceneMgr.cs" />
+    <Compile Include="Assets\Scripts\ClueSelectedPanel.cs" />
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClueEntity.cs" />
+    <Compile Include="Assets\Scripts\StaffPanel.cs" />
     <Compile Include="Assets\Scripts\Audio\Audio Manager.cs" />
     <Compile Include="Assets\Scripts\BaseUIForm.cs" />
+    <Compile Include="Assets\Scripts\ProcedureEntity.cs" />
     <Compile Include="Assets\Scripts\SysDefine.cs" />
+    <Compile Include="Assets\Scripts\StartScene.cs" />
+    <Compile Include="Assets\Scripts\ProcedureController.cs" />
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
@@ -68,11 +73,7 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
-    <Compile Include="Assets\Scripts\ProcedureController.cs" />
-    <Compile Include="Assets\Scripts\ProcedureEntity.cs" />
-    <Compile Include="Assets\Scripts\ClueSelectedPanel.cs" />
-    <Compile Include="Assets\Scripts\StaffPanel.cs" />
-    <Compile Include="Assets\Scripts\StartScene.cs" />
+    <Compile Include="Assets\Scripts\CluePool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
