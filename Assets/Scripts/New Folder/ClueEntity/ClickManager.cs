@@ -8,13 +8,12 @@ public class ClickManager : MonoBehaviour
  {
     public List<ClueEntity> clueList = new List<ClueEntity>();   //用一个list去装所有的线索
 
-
     ClueEntity tempClueEntity;   //鼠标点击的那个线索物品的组件ClueEntity    
     public int selectedType = -1;
 
     public int actionPoint = 3;   //行动点数量   
 
-    public int clueNumber;
+    public int clueNumber=0;
 
     private void Start()
     {
@@ -54,10 +53,10 @@ public class ClickManager : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             //点击的物品身上带有collider的物品
             if (hit.collider )
-            {               
+            {   
+                //用标签去找线索
                 if (hit.transform.gameObject.tag == "Clue") 
-                {
-                   
+                {                   
                     tempClueEntity = hit.transform.gameObject.GetComponent<ClueEntity>();
 
                     if (clueList.Contains(tempClueEntity)) {
@@ -82,7 +81,7 @@ public class ClickManager : MonoBehaviour
     {
         //clueSelectedPanelText.text= tempClueEntity.clueText;
         //tempClueEntity.clueAudioSource.GetComponent<AudioSource>().Play();
-        Debug.Log("Play>>");
+        Debug.Log("Play>>播放线索");
     }
 
 //<<<<<<< HEAD

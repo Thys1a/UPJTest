@@ -14,6 +14,5 @@ public class ClueEntity : MonoBehaviour
     public bool validBit;  //线索的有效位
     public int precursor;  //线索的前驱
     public int clueType;  //线索类型，面板上不用填写，在选择的时候会填写
-
 }
 

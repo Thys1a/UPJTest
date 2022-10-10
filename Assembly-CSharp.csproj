@@ -65,19 +65,23 @@
     <Compile Include="Assets\Scripts\ProcedureEntity.cs" />
     <Compile Include="Assets\Scripts\SysDefine.cs" />
     <Compile Include="Assets\Scripts\StartScene.cs" />
+    <Compile Include="Assets\Scripts\CluePool.cs" />
     <Compile Include="Assets\Scripts\ProcedureController.cs" />
     <Compile Include="Assets\Scripts\New Folder\ClueEntity\ClickManager.cs" />
+    <Compile Include="Assets\Scripts\Archive.cs" />
+    <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\XMLUtil.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\StoreUtil.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\BaseScene.cs" />
-    <Compile Include="Assets\Scripts\CluePool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Resources_dst\XMLDoc\Procedure.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Resources\XMLDoc\Procedure.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />

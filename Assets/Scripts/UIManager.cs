@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour
         if (baseUIForm == null) return;
 
         LoadUIToCurrentCache(uiFormName);
-        
+        Debug.Log(1);
     }
 
     /// <summary>

@@ -9,6 +9,7 @@ public class StartScene : BaseScene
         MessageCenter.Instance.Send(MessageCenter.MessageType.EndNormalProcess, null);
     }
 
+
     public void LoadGame()
     {
 
