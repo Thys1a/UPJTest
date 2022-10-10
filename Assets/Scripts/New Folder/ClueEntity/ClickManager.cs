@@ -8,34 +8,35 @@ public class ClickManager : MonoBehaviour
  {
     public List<ClueEntity> clueList = new List<ClueEntity>();   //用一个list去装所有的线索
 
-
     ClueEntity tempClueEntity;   //鼠标点击的那个线索物品的组件ClueEntity    
     public int selectedType = -1;
 
-    public Text clueSelectedPanelText;   //线索选择面板里出现的那个text   
     public int actionPoint = 3;   //行动点数量   
-    public int clueNumber;
+
+    public int clueNumber=0;
 
     private void Start()
     {
         MessageCenter.Instance.Register(MessageCenter.MessageType.ClueSelectedType, getChoice);
     }
+
     private void OnDestroy()
     {
         MessageCenter.Instance.Remove(MessageCenter.MessageType.ClueSelectedType, getChoice);
+
     }
 
     void Update()
     {
         Click();
     }
+
     public void ResetManager()
     {
         clueList.Clear();
         selectedType = -1;
         actionPoint = 3;
         //clueNumber = 0;
-
     }
 
 
@@ -48,14 +49,16 @@ public class ClickManager : MonoBehaviour
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             //点击的物品身上带有collider的物品
             if (hit.collider )
-            {               
+            {   
+                //用标签去找线索
                 if (hit.transform.gameObject.tag == "Clue") 
-                {
-                   
+                {                   
                     tempClueEntity = hit.transform.gameObject.GetComponent<ClueEntity>();
+
                     if (clueList.Contains(tempClueEntity)) {
                         Debug.Log(tempClueEntity.gameObject.name+ "has been added");
                         return;
@@ -78,9 +81,10 @@ public class ClickManager : MonoBehaviour
     {
         //clueSelectedPanelText.text= tempClueEntity.clueText;
         //tempClueEntity.clueAudioSource.GetComponent<AudioSource>().Play();
-        Debug.Log("Play>>");
+        Debug.Log("Play>>播放线索");
     }
 
+//<<<<<<< HEAD
     private void getChoice(object obj)
     {
         tempClueEntity.clueType = (int)obj;
@@ -89,7 +93,6 @@ public class ClickManager : MonoBehaviour
         AddToList(tempClueEntity);
         CheckePoint();
     }
-
 
 
     #region check
@@ -102,6 +105,7 @@ public class ClickManager : MonoBehaviour
         
         flag = CheckValidBit() && CheckPrecursor() && CheckType();
         //顺序表为空时，行动点-1
+
         
         //有效位错误，不是正确的线索
         if (!flag) actionPoint--;
@@ -141,7 +145,6 @@ public class ClickManager : MonoBehaviour
                 }
                 break;
         }
-
         return false;
     }
 
@@ -153,8 +156,7 @@ public class ClickManager : MonoBehaviour
     {
         if (tempClueEntity.clueType == selectedType)
         {
-            return true;
-            
+            return true;           
         }
         if(tempClueEntity.validBit==true&& selectedType==-1) selectedType = tempClueEntity.clueType;//第一个出现的有效线索
         return false;

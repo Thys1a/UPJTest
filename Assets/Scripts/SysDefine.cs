@@ -16,4 +16,5 @@ public static class SysDefine
     public const string SYS_PATH_CANVAS = "UIPrefab/RootCanvas";
     public const string SYS_PATH_PROCESSDOC = "XMLDoc/Procedure";
     public const string SYS_PATH_CLUE = "Prefabs/clue";
+    public const string SYS_PATH_DATA = "/data.json";
 }

@@ -43,8 +43,8 @@ public class ProcedureController: Singleton<ProcedureController>
     private void SetClueNumber(object number)
     {
         OpenOrCloseLogicControl(true);
-        logicController.clueNumber = (int)number;
-        
+        logicController.clueNumber = (int)number ;        
+        Debug.Log(logicController.clueNumber);
     }
 
     private void OnDestroy()
