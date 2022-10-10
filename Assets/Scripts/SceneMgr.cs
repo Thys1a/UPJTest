@@ -42,15 +42,10 @@ public class SceneMgr
     public void PreLoadScene(string name)
     {
 
-        AsyncOperation pre = SceneManager.LoadSceneAsync(name);
-        pre.allowSceneActivation = false;
-
-        if (PreLoadingScenesDict.ContainsKey(name))
+        if (!PreLoadingScenesDict.ContainsKey(name))
         {
-            PreLoadingScenesDict[name] = pre;
-        }
-        else
-        {
+            AsyncOperation pre = SceneManager.LoadSceneAsync(name);
+            pre.allowSceneActivation = false;
             PreLoadingScenesDict.Add(name, pre);
         }
     }
@@ -113,6 +108,15 @@ public class SceneMgr
     {
         return PreLoadingScenesDict.Count;
     }
+    public void ClearAllPreLoadingScene()
+    {
+        foreach (var item in PreLoadingScenesDict.Keys)
+        {
+            SceneManager.UnloadSceneAsync(item);
+            
+        }
+        PreLoadingScenesDict.Clear();
+    }
 
     /// <summary>
     /// –∂‘ÿ≥°æ∞
@@ -135,5 +139,10 @@ public class SceneMgr
     private void OnSceneUnloaded(Scene current)
     {
         Debug.Log("OnSceneUnloaded: " + current);
+    }
+
+    internal void PreLoadScene(object getScene)
+    {
+        throw new NotImplementedException();
     }
 }

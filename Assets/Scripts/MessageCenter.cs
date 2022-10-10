@@ -33,10 +33,15 @@ public class MessageCenter
     /// </summary>
     public enum MessageType
     {
-        SceneSwitching,ClueSelectedType,EndLevel,EndNormalProcess,
+        SceneSwitching,
+        ClueSelectedType,
+        EndLevel,
+        EndNormalProcess,
         ClueNumber,
         ClueGen,
-        ClueRecycle
+        ClueRecycle,
+        Archive,
+        RecordUpdate,
     }
 
     /// <summary>

@@ -6,12 +6,13 @@ public class StartScene : BaseScene
 {
     public void StartGame()
     {
-        MessageCenter.Instance.Send(MessageCenter.MessageType.EndNormalProcess, null);
+        MessageCenter.Instance.Send(MessageCenter.MessageType.Archive, true);
+
     }
 
     public void LoadGame()
     {
-
+        MessageCenter.Instance.Send(MessageCenter.MessageType.Archive, false);
     }
 
     public void ShowStaffPanel() 

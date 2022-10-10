@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -15,11 +17,15 @@ public class ClickManager : MonoBehaviour
     public Text clueSelectedPanelText;   //线索选择面板里出现的那个text   
     public int actionPoint = 3;   //行动点数量   
     public int clueNumber;
+    public int deadCount=0;
+    string[] info= new string[3];
 
     private void Start()
     {
         MessageCenter.Instance.Register(MessageCenter.MessageType.ClueSelectedType, getChoice);
     }
+
+
     private void OnDestroy()
     {
         MessageCenter.Instance.Remove(MessageCenter.MessageType.ClueSelectedType, getChoice);
@@ -34,7 +40,7 @@ public class ClickManager : MonoBehaviour
         clueList.Clear();
         selectedType = -1;
         actionPoint = 3;
-        //clueNumber = 0;
+        
 
     }
 
@@ -90,6 +96,17 @@ public class ClickManager : MonoBehaviour
         CheckePoint();
     }
 
+    public void SetRecord(List<string[]> data)
+    {
+        GameObject parent = GameObject.Find(SysDefine.Clue);
+        ClueEntity clueEntity;
+        foreach (var item in data)
+        {
+            clueEntity = parent.transform.Find(item[0]).GetComponent<ClueEntity>();
+            clueEntity.clueType = int.Parse(item[1]);
+            clueList.Add(clueEntity);
+        }  
+    }
 
 
     #region check
@@ -169,6 +186,7 @@ public class ClickManager : MonoBehaviour
         {
             Debug.Log("行动点为0，游戏失败，重新来过");
             ResetManager();
+            deadCount++;
         }
         if(clueList.Count == clueNumber)
         {
@@ -176,13 +194,15 @@ public class ClickManager : MonoBehaviour
             {
                 Debug.Log("行动点为1，游戏失败，重新来过");
                 ResetManager();
+                deadCount++;
             }
             ///通关的检测条件可以改善？
             if (actionPoint == 2 )
             {
-                Debug.Log("行动点为2，进入下一关");
+                Debug.Log("行动点为2，进入下一关。本关卡失败次数："+deadCount);
                 ResetManager();
-                MessageCenter.Instance.Send(MessageCenter.MessageType.EndLevel, null);
+                MessageCenter.Instance.Send(MessageCenter.MessageType.EndLevel, deadCount);
+                deadCount = 0;
             }
             
         }
@@ -196,6 +216,10 @@ public class ClickManager : MonoBehaviour
     public void AddToList(ClueEntity clueEntity)
     {
         clueList.Add(clueEntity);
+        info[0] = clueEntity.clueName;
+        info[1] = (clueList.Count - 1).ToString();
+        info[2] = clueEntity.clueType.ToString();
+        MessageCenter.Instance.Send(MessageCenter.MessageType.RecordUpdate, info);
     }
 }
 

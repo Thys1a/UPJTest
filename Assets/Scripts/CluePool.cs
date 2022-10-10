@@ -51,6 +51,7 @@ public class CluePool:MonoBehaviour
                     break;
             }
         }
+        obj.name = clueEntity.clueName;
         obj.transform.position = new Vector3(x, y, obj.transform.position.z);
         obj.SetActive(true);
         obj.GetComponent<Collider2D>().enabled = true;
@@ -59,7 +60,7 @@ public class CluePool:MonoBehaviour
     {
         List<XmlNode> clueNodes = (List<XmlNode>)obj;
         clueNumber = 0;
-        clueParent = new GameObject("Clues");
+        clueParent = new GameObject(SysDefine.Clue);
         foreach (XmlNode clueNode in clueNodes)
         {
             node = clueNode;
