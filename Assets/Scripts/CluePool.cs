@@ -11,7 +11,7 @@ public class CluePool:MonoBehaviour
     ObjectPool<GameObject> pool;//∂‘œÛ≥ÿ
     GameObject clueParent;
     XmlNode node;
-    int clueNumber;
+    public int clueNumber;
 
     void Start()
     {
@@ -43,7 +43,10 @@ public class CluePool:MonoBehaviour
                 case "name": clueEntity.clueName = item[1]; obj.name = item[1]; break;
                 case "num": clueEntity.clueNum = int.Parse(item[1]); break;
                 case "pre": clueEntity.precursor = int.Parse(item[1]); break;
-                case "valid": clueEntity.validBit = bool.Parse(item[1]); break;
+                case "valid": clueEntity.validBit = bool.Parse(item[1]);
+                    if(clueEntity.validBit)
+                       clueNumber++;
+                    break;
                 case "x": x = float.Parse(item[1]); break;
                 case "y": y = float.Parse(item[1]); break;
                 default:
@@ -65,8 +68,9 @@ public class CluePool:MonoBehaviour
         {
             node = clueNode;
             pool.Get();
-            clueNumber += 1;
-
+            Debug.Log(clueNumber);
+            
+                   
         }
         MessageCenter.Instance.Send(MessageCenter.MessageType.ClueNumber, clueNumber);
     }

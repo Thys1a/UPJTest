@@ -21,14 +21,4 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         else
             instance = (T)this;
     }
-
-    /*//在一个场景中有多个单例模式的时候，就需要去销毁
-    //销毁的时候设为空
-    protected virtual void OnDestory()
-    {
-        if (instance == this)
-        {
-            instance = null;
-        }
-    }*/
 }
