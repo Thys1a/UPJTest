@@ -20,6 +20,7 @@ public class ProcedureController: Singleton<ProcedureController>
         MessageCenter.Instance.Register(MessageCenter.MessageType.SceneSwitching, StartControl);
         MessageCenter.Instance.Register(MessageCenter.MessageType.Archive, CreateOrLoadArchive);
         MessageCenter.Instance.Register(MessageCenter.MessageType.RecordUpdate, OnRecordUpdate);
+        MessageCenter.Instance.Register(MessageCenter.MessageType.RecordActionPoint, OnActionpointUpdate);
 
         this.gameObject.AddComponent<ProcedureEntity>();
         this.gameObject.AddComponent<ClickManager>();
@@ -33,9 +34,7 @@ public class ProcedureController: Singleton<ProcedureController>
         list.Add("Start");
         list.Add("Level1");
         list.Add("Level2");
-        point = 0;
-        count = 0;
-
+        list.Add("End");
         Debug.Log("流程控制器开始工作……");
         procedure.enabled = true;
 
@@ -52,6 +51,7 @@ public class ProcedureController: Singleton<ProcedureController>
         MessageCenter.Instance.Remove(MessageCenter.MessageType.SceneSwitching, StartControl);
         MessageCenter.Instance.Remove(MessageCenter.MessageType.Archive, CreateOrLoadArchive);
         MessageCenter.Instance.Remove(MessageCenter.MessageType.RecordUpdate, OnRecordUpdate);
+        MessageCenter.Instance.Remove(MessageCenter.MessageType.RecordActionPoint, OnActionpointUpdate);
     }
 
 
@@ -70,15 +70,24 @@ public class ProcedureController: Singleton<ProcedureController>
         }
         if (point == list.Count)
         {
-            Debug.Log("所有流程结束。"); 
+            Debug.Log("所有流程结束。");
+            ReturnToStart();
             return;
         }
         if (SceneMgr.Instance.WaitingNumber()>0) SceneMgr.Instance.LoadScene(jump);
         else StartControl(null);
     }
 
+    private void ReturnToStart()
+    {
+        point = 0;
+        count = 0;
+        PreCheck();
+    }
+
     private void StartControl(object obj)
     {
+
         if (procedure.EnterProcess(list[point]))
         {
             Debug.Log("进入流程……");
@@ -106,6 +115,7 @@ public class ProcedureController: Singleton<ProcedureController>
         if (data!=null)
         {
             logicController.SetRecord(data);
+            logicController.SetActionpoint(save.GetActionPont());
             data = null;
         }
 
@@ -156,7 +166,10 @@ public class ProcedureController: Singleton<ProcedureController>
         bool isCreate = (bool)obj;
         if (isCreate) {
             save.CreateArchive();
-            EndControl(null);
+            point = 0;
+            count = 0;
+            if (SceneMgr.Instance.GetScene().name == SysDefine.ScenesName.START) EndControl(null);
+            else EndControl(0);
         }
         else
         {
@@ -168,7 +181,7 @@ public class ProcedureController: Singleton<ProcedureController>
             Debug.Log("跳转至存档流程……");
             PreCheck(scene);
         }
-        
+        UIManager.Instance().CloseUIForms("StartPanel");
     }
 
     private void OnRecordUpdate(object obj)
@@ -178,6 +191,15 @@ public class ProcedureController: Singleton<ProcedureController>
         if (!save.isArchiveEmpty())
         {
             save.UpdateRecord(info[0], int.Parse(info[1]), info[2]);
+            AutoSave();
+        }
+    }
+    private void OnActionpointUpdate(object obj)
+    {
+        if (!save.isArchiveEmpty())
+        {
+            int actionPoint = (int)obj;
+            save.UpdateActionpoint(actionPoint);
             AutoSave();
         }
     }

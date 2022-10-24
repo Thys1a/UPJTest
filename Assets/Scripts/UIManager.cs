@@ -45,9 +45,22 @@ public class UIManager : MonoBehaviour
 
         if (_DicFormsPaths != null)//载入预设
         {
-            _DicFormsPaths.Add("ClueSelectedPanel", @"UIPrefab\clueSelectedPanel");
-            _DicFormsPaths.Add("StaffPanel", @"UIPrefab\StaffPanel");
-
+            
+            Debug.Log( " 开始解析UI。");
+            List<System.Xml.XmlNode> nodes = XMLUtil.GetChildNodes(XMLUtil.LoadXml(SysDefine.SYS_PATH_UIPREFAB));
+            if (nodes == null)
+            {
+                Debug.Log("UI：Null NodeList.");
+            }
+            foreach (System.Xml.XmlNode node in nodes)
+            {
+                string[] item = XMLUtil.GetNameValueOfNode(node);
+                _DicFormsPaths.Add(item[0], item[1]);
+            }
+            //_DicFormsPaths.Add("ClueSelectedPanel", @"UIPrefab\clueSelectedPanel");
+            //_DicFormsPaths.Add("StaffPanel", @"UIPrefab\StaffPanel");
+            //_DicFormsPaths.Add("CluePanel", @"UIPrefab\cluePanel");
+            //_DicFormsPaths.Add("StartPanel", @"UIPrefab\StartPanel");
         }
     }
 

@@ -57,6 +57,7 @@ public class ProcedureEntity:MonoBehaviour
     private void LoadBackground(string v)
     {
         Debug.Log(v);
+        GameObject.FindGameObjectWithTag("Background").GetComponent<SpriteRenderer>().sprite = Resources.Load(SysDefine.SYS_PATH_BG+v, typeof(Sprite)) as Sprite;
     }
 
     private void LoadClues(XmlNode v)

@@ -31,6 +31,10 @@ public class Save
         
         archive.Update(name, click,type);
     }
+    public void UpdateActionpoint(int actionPoint)
+    {
+        archive.Update(actionPoint);
+    }
     public bool isArchiveEmpty()
     {
         return archive == null;
@@ -61,5 +65,10 @@ public class Save
     public int[] GetData()
     {
         return archive.GetData();
+    }
+
+    internal int GetActionPont()
+    {
+        return archive.GetActionpoint();
     }
 }

@@ -23,6 +23,7 @@ public class ClickManager : MonoBehaviour
     private void Start()
     {
         MessageCenter.Instance.Register(MessageCenter.MessageType.ClueSelectedType, getChoice);
+        MessageCenter.Instance.Send(MessageCenter.MessageType.ActionPoint, actionPoint);
     }
 
 
@@ -35,12 +36,16 @@ public class ClickManager : MonoBehaviour
     {
         Click();
     }
+    private void OnEnable()
+    {
+        ResetManager();
+    }
     public void ResetManager()
     {
         clueList.Clear();
         selectedType = -1;
         actionPoint = 3;
-        
+        MessageCenter.Instance.Send(MessageCenter.MessageType.ActionPoint, actionPoint);
 
     }
 
@@ -52,12 +57,18 @@ public class ClickManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                Debug.Log("click on UI");
+                return;
+            }
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             //点击的物品身上带有collider的物品
             if (hit.collider )
-            {               
+            {
+                
                 if (hit.transform.gameObject.tag == "Clue") 
                 {
                    
@@ -68,8 +79,10 @@ public class ClickManager : MonoBehaviour
                     }
                     Debug.Log(tempClueEntity.gameObject.name + "was clicked");
 
-                    //开启线索选择面板
-                    UIManager.Instance().ShowUIForm("ClueSelectedPanel");
+                    //开启线索面板
+                    UIManager.Instance().ShowUIForm("CluePanel");
+                    MessageCenter.Instance.Send(MessageCenter.MessageType.ShowCluePanel, tempClueEntity);
+
                     //播放线索
                     PlayClue();                                      
                 }
@@ -93,7 +106,7 @@ public class ClickManager : MonoBehaviour
         
         CheckClue();
         AddToList(tempClueEntity);
-        CheckePoint();
+        CheckPoint();
     }
 
     public void SetRecord(List<string[]> data)
@@ -105,9 +118,13 @@ public class ClickManager : MonoBehaviour
             clueEntity = parent.transform.Find(item[0]).GetComponent<ClueEntity>();
             clueEntity.clueType = int.Parse(item[1]);
             clueList.Add(clueEntity);
-        }  
+        }
+        
     }
-
+    public void SetActionpoint(int number) {
+        actionPoint = number;
+        MessageCenter.Instance.Send(MessageCenter.MessageType.ActionPoint, actionPoint);
+    }
 
     #region check
     /// <summary>
@@ -123,6 +140,8 @@ public class ClickManager : MonoBehaviour
         //有效位错误，不是正确的线索
         if (!flag) actionPoint--;
         Debug.Log("当前行动点个数为" + actionPoint);
+        MessageCenter.Instance.Send(MessageCenter.MessageType.ActionPoint, actionPoint);
+        MessageCenter.Instance.Send(MessageCenter.MessageType.RecordActionPoint, actionPoint);
     }
 
     /// <summary>
@@ -180,7 +199,7 @@ public class ClickManager : MonoBehaviour
     /// <summary>
     /// 检查行动点
     /// </summary>
-    void CheckePoint()
+    void CheckPoint()
     {        
         if (actionPoint == 0)
         {

@@ -33,15 +33,19 @@ public class MessageCenter
     /// </summary>
     public enum MessageType
     {
-        SceneSwitching,
-        ClueSelectedType,
-        EndLevel,
-        EndNormalProcess,
-        ClueNumber,
-        ClueGen,
-        ClueRecycle,
-        Archive,
-        RecordUpdate,
+        SceneSwitching,//场景切换
+        ClueSelectedType,//线索的选择
+        EndLevel,//关卡流程结束
+        EndNormalProcess,//普通流程结束
+        ClueNumber,//有效线索个数
+        ClueGen,//转到线索生成
+        ClueRecycle,//线索回收
+        Archive,//是否读取存档
+        RecordUpdate,//存档记录更新
+        ActionPoint,//行动点个数
+        ShowCluePanel,
+        ShowClueSelectedPanel,
+        RecordActionPoint,
     }
 
     /// <summary>

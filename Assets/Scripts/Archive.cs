@@ -11,7 +11,7 @@ public class Archive
     [SerializeField]
     int point;
     [SerializeField]
-    int deadCount;
+    int deadCount,actionPoint;
     [SerializeField]
     List<InfoArray> _record = new List<InfoArray>();
     //[SerializeField]
@@ -22,17 +22,19 @@ public class Archive
         return _record;
     }
 
-    public Archive(string currentScene, int point = 0, int deadCount = 0)
+    public Archive(string currentScene, int point = 0, int deadCount = 0,int actionPoint=3)
     {
         this.currentScene = currentScene;
         this.point = point;
         this.deadCount = deadCount;
+        this.actionPoint = actionPoint;
     }
     public void Update(int point, int deadCount, string scene)
     {
         this.currentScene = scene;
         this.point = point;
         this.deadCount = deadCount;
+        
     }
     public void Update(string name, int click, string type)
     {
@@ -40,6 +42,11 @@ public class Archive
         string[] info = new string[] { name, type };
         record.Add(info);
         _record.Add(new InfoArray(info));
+        
+    }
+    public void Update(int actionPoint)
+    {
+        this.actionPoint = actionPoint;
     }
     public void SetRecord(List<string[]> record)
     {
@@ -56,6 +63,12 @@ public class Archive
         }
 
     }
+
+    internal int GetActionpoint()
+    {
+        return this.actionPoint;
+    }
+
     public void DeleteRecord()
     {
         this.record.Clear();

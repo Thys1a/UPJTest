@@ -1,0 +1,6 @@
+<root>
+	<ClueSelectedPanel>UIPrefab/clueSelectedPanel</ClueSelectedPanel>
+	<StaffPanel>UIPrefab/StaffPanel</StaffPanel>
+	<CluePanel>UIPrefab/cluePanel</CluePanel>
+	<StartPanel>UIPrefab/StartPanel</StartPanel>
+</root>
