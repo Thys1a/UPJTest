@@ -5,10 +5,10 @@ using UnityEngine.Events;
 
 public class StartPanel : BaseUIForm
 {
-    public AudioSource audio;
+    public AudioSource se;
     public void OnClick()
     {
-        audio.Play();
+        se.Play();
     }
     
     public void StartGame()
