@@ -16,10 +16,10 @@ public class ClueEntity : MonoBehaviour
     public int clueType;  //线索类型，面板上不用填写，在选择的时候会填写
     public string question;
     public string textOption, audioOption;
+    public Sprite clickIcon; // 点击的图片
+    //----------------------------------------------
 
     public AudioSource clickSound; //点击时候的声音
-    public Sprite clickIcon; // 点击的图片
-
     public string action;
     public object pointer;//自由指针
 

@@ -9,7 +9,7 @@ public class CluePool:MonoBehaviour
 {
 
     ObjectPool<GameObject> pool;//∂‘œÛ≥ÿ
-    GameObject clueParent;
+    public GameObject clueParent;
     XmlNode node;
     public int clueNumber;
 
@@ -89,7 +89,7 @@ public class CluePool:MonoBehaviour
     {
         List<XmlNode> clueNodes = (List<XmlNode>)obj;
         clueNumber = 0;
-        clueParent = new GameObject(SysDefine.Clue);
+        if (clueParent == null) clueParent = new GameObject(SysDefine.Clue);
         foreach (XmlNode clueNode in clueNodes)
         {
             node = clueNode;
@@ -119,13 +119,26 @@ public class CluePool:MonoBehaviour
     private void actionOnRelease(GameObject obj)
     {
         obj.GetComponent<SpriteRenderer>().sprite = null;
+        obj.GetComponent<ClueEntity>().clueSound.clip = null;
+
+        obj.GetComponent<ClueEntity>().clickSound.clip = null;
+        obj.GetComponent<ClueEntity>().pointer = null;
+        obj.GetComponent<ClueEntity>().action = "";
         obj.SetActive(false);
 
     }
 
     private void actionOnGet(GameObject obj)
     {
-        obj.transform.parent = clueParent.transform;
+        
+        try { obj.transform.parent = clueParent.transform; }
+        catch (Exception)
+        {
+            
+            if (clueParent == null) clueParent = new GameObject(SysDefine.Clue);
+            if (obj == null) obj = Create();
+            obj.transform.parent = clueParent.transform;
+        }
         GonstructClue(node, obj);
     }
 

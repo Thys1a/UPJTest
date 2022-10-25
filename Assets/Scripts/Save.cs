@@ -71,4 +71,10 @@ public class Save
     {
         return archive.GetActionpoint();
     }
+
+    internal void ClearArchive()
+    {
+        //Directory.Delete(filePath);
+        Debug.Log("Çå³ý´æµµ£º´ý²¹³ä");
+    }
 }

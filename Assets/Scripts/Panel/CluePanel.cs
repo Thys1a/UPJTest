@@ -31,9 +31,10 @@ public class CluePanel : BaseUIForm
     {
         clue = (ClueEntity)clueEntity;
         clueBtn.GetComponent<Image>().sprite = clue.clickIcon;
-
+        
         base.Display();
         Play();
+        
     }
     public override void Display()
     {
@@ -73,7 +74,7 @@ public class CluePanel : BaseUIForm
         }
         else flag = true;
         if (flag) {
-            UIManager.Instance().ShowUIForm("ClueSelectedPanel");
+            
             MessageCenter.Instance.Send(MessageCenter.MessageType.ShowClueSelectedPanel, clue);
         }
     }
@@ -99,6 +100,7 @@ public class CluePanel : BaseUIForm
         //{
         //    yield return new WaitForSeconds(clue.clueSound.clip.length);
         //}
+        UIManager.Instance().ShowUIForm("ClueSelectedPanel");
         yield return new WaitUntil(() => clue.clueSound.isPlaying == false);
         yield return new WaitUntil(()=>textOK==true);
         text.text = null;

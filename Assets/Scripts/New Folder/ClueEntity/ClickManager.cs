@@ -24,6 +24,7 @@ public class ClickManager : MonoBehaviour
     {
         MessageCenter.Instance.Register(MessageCenter.MessageType.ClueSelectedType, getChoice);
         MessageCenter.Instance.Send(MessageCenter.MessageType.ActionPoint, actionPoint);
+        
     }
 
 

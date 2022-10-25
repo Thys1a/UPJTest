@@ -24,7 +24,6 @@ public class ProcedureController: Singleton<ProcedureController>
 
         this.gameObject.AddComponent<ProcedureEntity>();
         this.gameObject.AddComponent<ClickManager>();
-        this.gameObject.AddComponent<CluePool>();
         procedure = this.GetComponent<ProcedureEntity>();procedure.enabled = false;
         logicController = this.GetComponent<ClickManager>();logicController.enabled = false;
         save = new Save();
@@ -34,7 +33,7 @@ public class ProcedureController: Singleton<ProcedureController>
         list.Add("Start");
         list.Add("Level1");
         list.Add("Level2");
-        list.Add("End");
+        //list.Add("End");
         Debug.Log("流程控制器开始工作……");
         procedure.enabled = true;
 
@@ -68,12 +67,7 @@ public class ProcedureController: Singleton<ProcedureController>
             Debug.LogError("流程指针越界。");
             return; 
         }
-        if (point == list.Count)
-        {
-            Debug.Log("所有流程结束。");
-            ReturnToStart();
-            return;
-        }
+
         if (SceneMgr.Instance.WaitingNumber()>0) SceneMgr.Instance.LoadScene(jump);
         else StartControl(null);
     }
@@ -82,7 +76,6 @@ public class ProcedureController: Singleton<ProcedureController>
     {
         point = 0;
         count = 0;
-        PreCheck();
     }
 
     private void StartControl(object obj)
@@ -133,10 +126,15 @@ public class ProcedureController: Singleton<ProcedureController>
             MessageCenter.Instance.Send(MessageCenter.MessageType.ClueRecycle, null);
         }
         Debug.Log("第" + point + "个流程结束。");
-        list[point] = null;
         point += 1;
+        if (point == list.Count)
+        {
+            Debug.Log("所有流程结束。");
+            save.ClearArchive();
+            UIManager.Instance().ShowUIForm("StartPanel");
+            return;
+        }
 
-        
         PreCheck();
     }
 

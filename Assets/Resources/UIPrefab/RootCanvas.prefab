@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2965576712542412513}
   - component: {fileID: 9192489187689523131}
+  - component: {fileID: 330756438134560038}
   m_Layer: 0
   m_Name: _ProcedureController
   m_TagString: Untagged
@@ -301,3 +302,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5877072ec0fbfde44a2e331b3817ee02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &330756438134560038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8784495179586141474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eafbf73a554a384c97260af3c73298f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueParent: {fileID: 0}
+  clueNumber: 0

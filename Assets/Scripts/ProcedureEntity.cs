@@ -33,6 +33,7 @@ public class ProcedureEntity:MonoBehaviour
                 case "next":PreLoadNextScene(item[1]);break;
                 case "clues":LoadClues(node);break;
                 case "background":LoadBackground(item[1]);break;
+                case "end": MessageCenter.Instance.Send(MessageCenter.MessageType.EndNormalProcess,null);break;
                 default:Debug.Log(procedureName + "：遇到不可解析的结点。");
                     break;
             }
