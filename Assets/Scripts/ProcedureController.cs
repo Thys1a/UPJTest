@@ -72,11 +72,6 @@ public class ProcedureController: Singleton<ProcedureController>
         else StartControl(null);
     }
 
-    private void ReturnToStart()
-    {
-        point = 0;
-        count = 0;
-    }
 
     private void StartControl(object obj)
     {

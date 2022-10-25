@@ -16,7 +16,7 @@
 				<audio>黄色的黄金使得丰收有了可能</audio>
 				<click_audio>摇晃绳子</click_audio>
 				<click_sprite>绳结</click_sprite>
-				<question>来为部落增加一个新的绳结吧 。</question>
+				<question>来为部落增加一个新的绳结吧。</question>
 				<text_option>银色</text_option>
 				<audio_option>黄色</audio_option>
 			</clue>
@@ -30,9 +30,9 @@
 				<text>贞，妇好弗疾齿。</text>
 				<audio>贞，妇好其怒乎</audio>
 				<click_sprite>甲骨</click_sprite>
-				<question>商王武丁在此之后又占卜了一次与妇好有关的问题 ，这个问题是 ：</question>
-				<text_option>妇好在牙疼吗 ？</text_option>
-				<audio_option>妇好还生气否 ？</audio_option>
+				<question>商王武丁在此之后又占卜了一次与妇好有关的问题，这个问题是：</question>
+				<text_option>妇好在牙疼吗？</text_option>
+				<audio_option>妇好还生气否？</audio_option>
 			</clue>
 			<clue>
 				<x>5.47</x>
@@ -45,7 +45,7 @@
 				<audio>毛公鼎的出土时间</audio>
 				<click_audio>铜鼎被敲击时</click_audio>
 				<click_sprite>鼎</click_sprite>
-				<question>毛公的愿望正如此鼎 ，亘古流至今 ，其出土于</question>
+				<question>毛公的愿望正如此鼎，亘古流至今，其出土于</question>
 				<text_option>陕西岐山</text_option>
 				<audio_option>1843年</audio_option>
 			</clue>
@@ -67,7 +67,7 @@
 				<action>multiSprite</action>
 				<click_sprite>三封书信2</click_sprite>
 				<click_sprite>三封书信3</click_sprite>
-				<question>要在或口头或手书的故纸堆中去拾起一张 ，你会选择</question>
+				<question>要在或口头或手书的故纸堆中去拾起一张，你会选择</question>
 				<text_option>骊山</text_option>
 				<audio_option>雅典</audio_option>
 			</clue>
@@ -81,7 +81,7 @@
 				<text>第一个天体物理学家</text>
 				<audio>最后一个科学占星家</audio>
 				<click_sprite>星盘</click_sprite>
-				<question>星盘可以量测天体在地平线上的高度 ，在最初的时候曾是天文学仪器 ，之后则主要用于占星学中 。为开普勒选一个星盘吧 ：</question>
+				<question>星盘可以量测天体在地平线上的高度，在最初的时候曾是天文学仪器，之后则主要用于占星学中。为开普勒选一个星盘吧：</question>
 				<text_option>第谷大型浑仪球形星盘</text_option>
 				<audio_option>占卜用波斯平面星盘</audio_option>
 			</clue>
@@ -95,7 +95,7 @@
 				<text>胭脂井应是景阳井</text>
 				<audio>陈后主本名陈叔宝</audio>
 				<click_sprite>露布</click_sprite>
-				<question>如果要对杨广发布在露布上的新闻公告做一些修改 ，应该修改</question>
+				<question>如果要对杨广发布在露布上的新闻公告做一些修改，应该修改</question>
 				<text_option>景阳井</text_option>
 				<audio_option>陈后主</audio_option>
 			</clue>
@@ -109,7 +109,7 @@
 				<text>岭南荔枝天下第一</text>
 				<audio>巴蜀荔枝家乡味道</audio>
 				<click_sprite>驿站</click_sprite>
-				<question>一骑红尘妃子笑 ，无人知是荔枝来 ，荔枝究竟来自哪里 ？</question>
+				<question>一骑红尘妃子笑，无人知是荔枝来，荔枝究竟来自哪里？</question>
 				<text_option>岭南</text_option>
 				<audio_option>巴蜀</audio_option>
 			</clue>
@@ -123,7 +123,7 @@
 				<text>古埃及壁画与墓主人生前事有关</text>
 				<audio>古埃及壁画与亡灵书的铭文有关</audio>
 				<click_sprite>埃及壁画</click_sprite>
-				<question>年轻画师绘制的这一部分壁画内容是 ：</question>
+				<question>年轻画师绘制的这一部分壁画内容是：</question>
 				<text_option>墓主人生活记录</text_option>
 				<audio_option>亡灵书的铭文</audio_option>
 			</clue>

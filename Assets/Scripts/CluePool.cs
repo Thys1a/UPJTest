@@ -108,6 +108,7 @@ public class CluePool:MonoBehaviour
             pool.Release(clueParent.transform.GetChild(i).gameObject);
         }
         Destroy(clueParent);
+        clueParent = null;
     }
 
     #region pool

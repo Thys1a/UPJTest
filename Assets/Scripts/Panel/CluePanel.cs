@@ -12,6 +12,7 @@ public class CluePanel : BaseUIForm
     private bool isFinished = false;
     private bool textOK = false;
     private int i = 0;
+    public Sprite open, close;
 
     private void Awake()
     {
@@ -89,6 +90,7 @@ public class CluePanel : BaseUIForm
 
     }
     void Play() {
+        replayBtn.image.sprite = open;
         StartCoroutine(nameof(CheckPlayingState));
         this.GetComponent<TypewitterEffect>().StartPlaying(clue.clueText, FinishTextPlaying);
     }
@@ -105,6 +107,7 @@ public class CluePanel : BaseUIForm
         yield return new WaitUntil(()=>textOK==true);
         text.text = null;
         isFinished = true;
+        replayBtn.image.sprite = close;
     }
 
     void FinishTextPlaying()
@@ -115,6 +118,7 @@ public class CluePanel : BaseUIForm
     void StopPlaying()
     {
         clue.clueSound.Stop();
+        replayBtn.image.sprite = close;
         this.GetComponent<TypewitterEffect>().StopPlaying();
     }
 }

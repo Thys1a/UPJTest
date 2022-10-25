@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelScene : BaseScene
 {
     // Start is called before the first frame update
-    public TMPro.TextMeshProUGUI textUI;
+    public List<Image> images;
+    private int pre = 3, total = 3;
+
     private void Awake()
     {
         MessageCenter.Instance.Register(MessageCenter.MessageType.ActionPoint, Point);
@@ -22,7 +25,18 @@ public class LevelScene : BaseScene
     public void Point(object obj)
     {
         int number = (int)obj;
-        string point = number.ToString() + "/3";
-        textUI.text = point;
+        if (number == pre)
+        {
+            return;
+        }
+        else
+        {
+            for(int i = 0; i < total;i++)
+            {
+                if (i < total - number) images[i].gameObject.SetActive(false);
+                else images[i].gameObject.SetActive(true);
+            }
+            pre = number;
+        }
     }
 }
