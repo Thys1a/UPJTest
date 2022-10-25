@@ -8,7 +8,7 @@ using UnityEngine;
 public class Save
 {
     Archive archive;
-    string filePath = Application.dataPath + SysDefine.SYS_PATH_DATA;
+    string filePath = Application.persistentDataPath + SysDefine.SYS_PATH_DATA;
     public void CreateArchive()
     {
         archive = new Archive(SceneMgr.Instance.GetScene().name);
