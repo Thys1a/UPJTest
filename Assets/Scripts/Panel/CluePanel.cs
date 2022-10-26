@@ -13,8 +13,6 @@ public class CluePanel : BaseUIForm
     private bool textOK = false;
     private int i = 0;
     public Sprite open, close;
-    public AudioSource walkman;
-    public Image cluePanelbg;
 
     private void Awake()
     {
@@ -34,8 +32,6 @@ public class CluePanel : BaseUIForm
     {
         clue = (ClueEntity)clueEntity;
         clueBtn.GetComponent<Image>().sprite = clue.clickIcon;
-
-        cluePanelbg.sprite = clue.cluePanelBG;
         
         base.Display();
         Play();
@@ -95,7 +91,6 @@ public class CluePanel : BaseUIForm
     }
     void Play() {
         replayBtn.image.sprite = open;
-        walkman.Play();
         StartCoroutine(nameof(CheckPlayingState));
         this.GetComponent<TypewitterEffect>().StartPlaying(clue.clueText, FinishTextPlaying);
     }

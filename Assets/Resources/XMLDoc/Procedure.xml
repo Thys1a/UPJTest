@@ -14,7 +14,6 @@
 				<valid>True</valid>
 				<text>银色的和平使得丰收有了可能。</text>
 				<audio>黄色的黄金使得丰收有了可能</audio>
-				<cluepanel_bg>关一-绳结</cluepanel_bg>
 				<click_audio>摇晃绳子</click_audio>
 				<click_sprite>绳结</click_sprite>
 				<question>来为部落增加一个新的绳结吧。</question>
@@ -30,7 +29,6 @@
 				<valid>True</valid>
 				<text>贞，妇好弗疾齿。</text>
 				<audio>贞，妇好其怒乎</audio>
-				<cluepanel_bg>关一-甲骨</cluepanel_bg>
 				<click_sprite>甲骨</click_sprite>
 				<question>商王武丁在此之后又占卜了一次与妇好有关的问题，这个问题是：</question>
 				<text_option>妇好在牙疼吗？</text_option>
@@ -45,7 +43,6 @@
 				<valid>True</valid>
 				<text>毛公鼎的出土地点</text>
 				<audio>毛公鼎的出土时间</audio>
-				<cluepanel_bg>关一-毛公鼎</cluepanel_bg>
 				<click_audio>铜鼎被敲击时</click_audio>
 				<click_sprite>鼎</click_sprite>
 				<question>毛公的愿望正如此鼎，亘古流至今，其出土于</question>
@@ -66,11 +63,9 @@
 				<valid>True</valid>
 				<text>是典故但不是真实</text>
 				<audio>是战争演变成体育</audio>
-				<cluepanel_bg>关二-三封书信</cluepanel_bg>
-				<click_audio>翻书的声音</click_audio>
 				<click_sprite>三封书信</click_sprite>
-				<action>multiSprite</action>				
-				<click_sprite>三封书信2</click_sprite>				
+				<action>multiSprite</action>
+				<click_sprite>三封书信2</click_sprite>
 				<click_sprite>三封书信3</click_sprite>
 				<question>要在或口头或手书的故纸堆中去拾起一张，你会选择</question>
 				<text_option>骊山</text_option>
@@ -85,7 +80,6 @@
 				<valid>False</valid>
 				<text>第一个天体物理学家</text>
 				<audio>最后一个科学占星家</audio>
-				<click_audio>钢珠滚动</click_audio>
 				<click_sprite>星盘</click_sprite>
 				<question>星盘可以量测天体在地平线上的高度，在最初的时候曾是天文学仪器，之后则主要用于占星学中。为开普勒选一个星盘吧：</question>
 				<text_option>第谷大型浑仪球形星盘</text_option>
@@ -100,7 +94,6 @@
 				<valid>True</valid>
 				<text>胭脂井应是景阳井</text>
 				<audio>陈后主本名陈叔宝</audio>
-				<click_audio>风吹动旗帜的声音</click_audio>
 				<click_sprite>露布</click_sprite>
 				<question>如果要对杨广发布在露布上的新闻公告做一些修改，应该修改</question>
 				<text_option>景阳井</text_option>
@@ -115,7 +108,6 @@
 				<valid>True</valid>
 				<text>岭南荔枝天下第一</text>
 				<audio>巴蜀荔枝家乡味道</audio>
-				<click_audio>马蹄声</click_audio>
 				<click_sprite>驿站</click_sprite>
 				<question>一骑红尘妃子笑，无人知是荔枝来，荔枝究竟来自哪里？</question>
 				<text_option>岭南</text_option>
@@ -130,7 +122,6 @@
 				<valid>False</valid>
 				<text>古埃及壁画与墓主人生前事有关</text>
 				<audio>古埃及壁画与亡灵书的铭文有关</audio>
-				<click_audio>研磨石头的声音</click_audio>
 				<click_sprite>埃及壁画</click_sprite>
 				<question>年轻画师绘制的这一部分壁画内容是：</question>
 				<text_option>墓主人生活记录</text_option>
