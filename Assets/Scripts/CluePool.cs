@@ -57,7 +57,13 @@ public class CluePool:MonoBehaviour
                 case "text_option":clueEntity.textOption = item[1];break;
                 case "audio_option":clueEntity.audioOption = item[1];break;
 
-                case "click_audio":clueEntity.clickSound.clip = Resources.Load<AudioClip>(SysDefine.SYS_PATH_SOUNDEFFECT + item[1]); break;
+                case "cluepanel_bg": clueEntity.cluePanelBG  = Resources.Load(SysDefine.SYS_PATH_SPRITE + item[1], typeof(Sprite)) as Sprite; break;
+
+                case "click_audio":clueEntity.clickSound.clip = Resources.Load<AudioClip>(SysDefine.SYS_PATH_SOUNDEFFECT + item[1]);
+                    obj.GetComponents<AudioSource>()[0].enabled = true;
+                    obj.GetComponents<AudioSource>()[1].enabled = true;
+                    obj.GetComponents<AudioSource>()[1].playOnAwake =false ;
+                    break;
                 case "click_sprite": 
                     if(clueEntity.action != "multiSprite") clueEntity.clickIcon = Resources.Load(SysDefine.SYS_PATH_SPRITE + item[1], typeof(Sprite)) as Sprite;
                     else
@@ -84,7 +90,9 @@ public class CluePool:MonoBehaviour
         obj.transform.position = new Vector3(x, y, obj.transform.position.z);
         obj.SetActive(true);
         obj.GetComponent<Collider2D>().enabled = true;
+
     }
+
     private void ConstructClueList(object obj)
     {
         List<XmlNode> clueNodes = (List<XmlNode>)obj;
@@ -100,6 +108,7 @@ public class CluePool:MonoBehaviour
         }
         MessageCenter.Instance.Send(MessageCenter.MessageType.ClueNumber, clueNumber);
     }
+
     private void RecycleClueList(object obj)
     {
         if (clueParent == null) return;

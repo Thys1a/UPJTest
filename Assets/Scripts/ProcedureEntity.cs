@@ -39,6 +39,9 @@ public class ProcedureEntity:MonoBehaviour
             }
         }
         EndParsing();
+        //加载进度条
+        if (procedureName == "Level2")       
+            Test.Instance.LoadNextLevel();                   
     }
 
 
