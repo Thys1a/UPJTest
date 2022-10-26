@@ -17,7 +17,7 @@ public class ClueEntity : MonoBehaviour
     public string question;
     public string textOption, audioOption;
     public Sprite clickIcon; // µã»÷µÄÍ¼Æ¬
-    //----------------------------------------------
+    public Sprite cluePanelBG;  //ÏßË÷Ãæ°å±³¾°Í¼Æ¬
 
     public AudioSource clickSound; //µã»÷Ê±ºòµÄÉùÒô
     public string action;
@@ -26,6 +26,9 @@ public class ClueEntity : MonoBehaviour
     //public string stroyDescription;
     //public Sprite storyPicture;
     //public string switchingDescription;
-
+   /* private void Start()
+    {
+        clueSound.enabled = true;
+    }*/
 }
 
