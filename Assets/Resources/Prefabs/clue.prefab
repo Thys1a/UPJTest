@@ -134,10 +134,12 @@ MonoBehaviour:
   validBit: 1
   precursor: -1
   clueType: -1
+  question: 
+  textOption: 
+  audioOption: 
+  clickIcon: {fileID: 0}
   clickSound: {fileID: 5951499665678095136}
-  stroyDescription: 
-  storyPicture: {fileID: 0}
-  switchingDescription: 
+  action: 
 --- !u!82 &9061661076458528446
 AudioSource:
   m_ObjectHideFlags: 0
